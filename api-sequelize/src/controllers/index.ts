@@ -1,0 +1,5 @@
+export * as homeController from './homeController'
+// export * as userController from './userController'
+export * as insertController from './insertController'
+export * as getController from './getController'
+export * as updateController from './updateController'

@@ -1,0 +1,16 @@
+
+await User.findAll({ parametros de busca })  = busca todos os registros;
+
+await User.findOne({ ... }) = busca 1 registro;
+
+await User.findByPk(id)  = busca o registro do id;
+
+await User.findOrBuild()  // igual abaixo só que builda
+
+const [ usuario, created ] = await User.findOrCreate({ where: { ... }, defaults: { name: variavel, ... } });
+//  procura se existe, se não existe, cria conforme especificado,
+// retorna o dado e se foi criado ou não (created: boolean)
+
+/// getters e setters de models =  exemplos no model User.
+
+//campos virtual = exemplos no model User
